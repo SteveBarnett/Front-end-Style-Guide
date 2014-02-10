@@ -651,6 +651,21 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+/* line 63, ../sass/_base.scss */
+.primary-colour-swatch {
+  background: #000;
+}
+
+/* line 67, ../sass/_base.scss */
+.secondary-colour-swatch {
+  background: #666;
+}
+
+/* line 71, ../sass/_base.scss */
+.tertiary-colour-swatch {
+  background: #ccc;
+}
+
 /* line 9, ../sass/_layout.scss */
 .no-p {
   padding: 0;
@@ -666,6 +681,22 @@ svg:not(:root) {
 .no-mp-centered {
   margin: 0 auto;
   padding: 0;
+}
+
+/* line 23, ../sass/_layout.scss */
+.no-bull {
+  list-style-type: none;
+}
+
+/* line 27, ../sass/_layout.scss */
+.l-ib {
+  display: inline-block;
+}
+
+/* line 31, ../sass/_layout.scss */
+.colour-swatch {
+  width: 6em;
+  height: 6em;
 }
 
 /* line 4, ../sass/_typography.scss */
