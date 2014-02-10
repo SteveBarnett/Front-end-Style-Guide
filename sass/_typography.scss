@@ -1,3 +1,5 @@
+@import "variables";
+
 // good measure: 45 to 75 characters
 // 1em is about 2 characters, so use 22 to 38ems
 
@@ -74,4 +76,13 @@ blockquote {
 
 .no-bull {
   list-style: none;
+}
+
+
+.font--primary {
+  font-family: $font-family-sans-serif;
+}
+
+.font--secondary {
+  font-family: $font-family-serif;
 }
