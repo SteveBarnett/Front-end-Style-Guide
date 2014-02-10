@@ -591,43 +591,42 @@ blockquote {
 
 /* line 6, ../sass/_base.scss */
 a {
-  text-decoration: none;
   color: #013568;
 }
-/* line 9, ../sass/_base.scss */
+/* line 8, ../sass/_base.scss */
 a:visited {
   color: #000203;
 }
-/* line 12, ../sass/_base.scss */
+/* line 11, ../sass/_base.scss */
 a:hover {
   text-decoration: underline;
   color: #011b35;
 }
-/* line 16, ../sass/_base.scss */
+/* line 15, ../sass/_base.scss */
 a:focus {
   outline: thin dotted;
   color: black;
 }
-/* line 21, ../sass/_base.scss */
+/* line 20, ../sass/_base.scss */
 a:hover, a:active {
   outline: 0;
 }
 
-/* line 26, ../sass/_base.scss */
+/* line 25, ../sass/_base.scss */
 ::-moz-selection {
   background-color: #a6a6a6;
   color: black;
   text-shadow: none;
 }
 
-/* line 32, ../sass/_base.scss */
+/* line 31, ../sass/_base.scss */
 ::selection {
   background-color: #a6a6a6;
   color: black;
   text-shadow: none;
 }
 
-/* line 38, ../sass/_base.scss */
+/* line 37, ../sass/_base.scss */
 hr {
   display: block;
   margin: 1em 0;
@@ -638,7 +637,7 @@ hr {
   border-bottom: 1px solid white;
 }
 
-/* line 50, ../sass/_base.scss */
+/* line 49, ../sass/_base.scss */
 img {
   border-width: 0;
   vertical-align: middle;
@@ -647,7 +646,7 @@ img {
   height: auto;
 }
 
-/* line 58, ../sass/_base.scss */
+/* line 57, ../sass/_base.scss */
 svg:not(:root) {
   overflow: hidden;
 }
