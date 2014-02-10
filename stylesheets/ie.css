@@ -645,7 +645,17 @@ hr {
   border-bottom: 1px solid white;
 }
 
-/* line 49, ../sass/_base.scss */
+/* line 47, ../sass/_base.scss */
+.dotted {
+  border-style: dotted;
+}
+
+/* line 51, ../sass/_base.scss */
+.dashed {
+  border-style: dashed;
+}
+
+/* line 58, ../sass/_base.scss */
 img {
   border-width: 0;
   vertical-align: middle;
@@ -654,24 +664,24 @@ img {
   height: auto;
 }
 
-/* line 57, ../sass/_base.scss */
+/* line 66, ../sass/_base.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 63, ../sass/_base.scss */
+/* line 72, ../sass/_base.scss */
 .primary-colour-swatch {
   background: black;
   color: #fff;
 }
 
-/* line 68, ../sass/_base.scss */
+/* line 77, ../sass/_base.scss */
 .secondary-colour-swatch {
   background: #404040;
   color: #fff;
 }
 
-/* line 73, ../sass/_base.scss */
+/* line 82, ../sass/_base.scss */
 .tertiary-colour-swatch {
   background: gray;
 }
