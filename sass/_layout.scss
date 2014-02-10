@@ -1,0 +1,21 @@
+// Divide the page into sections.
+// Layouts hold one or more modules together.
+// Layouts specify widths and margins
+// Layouts specify color/background
+// Use .l- prefix.
+
+// Use @include respond-min(60em) { ... } to bracket responsive elements
+
+.no-p {
+  padding: 0;
+}
+
+.no-mp {
+  margin: 0;
+  padding: 0;
+}
+
+.no-mp-centered {
+  margin: 0 auto;
+  padding: 0;
+}
