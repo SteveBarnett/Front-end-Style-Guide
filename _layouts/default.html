@@ -53,10 +53,13 @@
         {% include table.html %}
 
         <form action="">
-          {% include input-email.html %} <br />
-          {% include input-number.html %} <br />
-          {% include input-text.html %} <br />
-          {% include input-url.html %} <br />
+          <fieldset>
+            <legend>Legend for a fieldset</legend>
+            {% include input-email.html %} <br />
+            {% include input-number.html %} <br />
+            {% include input-text.html %} <br />
+            {% include input-url.html %} <br />
+          </fieldset>
           {% include select.html %} <br />
           {% include textarea.html %} <br />
           {% include checkbox.html %} <br />
