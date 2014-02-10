@@ -23,14 +23,14 @@ a {
 }
 
 ::-moz-selection {
-  background-color : lighten($basecolor, 65%);
-  color : $basecolor;
+  background-color : lighten($primaryColor, 65%);
+  color : $primaryColor;
   text-shadow : none;
 }
 
 ::selection {
-  background-color : lighten($basecolor, 65%);
-  color : $basecolor;
+  background-color : lighten($primaryColor, 65%);
+  color : $primaryColor;
   text-shadow : none;
 }
 
@@ -69,16 +69,32 @@ svg:not(:root) {
 
 // colours
 
-.primary-colour-swatch {
+.colour-swatch--primary {
   background: $black;
   color: #fff;
 }
 
-.secondary-colour-swatch {
+.colour-swatch--secondary {
   background: $darkgrey;
   color: #fff;
 }
 
-.tertiary-colour-swatch {
+.colour-swatch--tertiary {
   background: $grey;
+}
+
+.colour-swatch--success {
+  background: $success;
+}
+
+.colour-swatch--warning {
+  background: $warning;
+}
+
+.colour-swatch--error {
+  background: $error;
+}
+
+.colour-swatch--info {
+  background: $info;
 }

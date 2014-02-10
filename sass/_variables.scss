@@ -7,22 +7,7 @@ $lightgrey: lighten($black, 75%);
 $lightergrey: lighten($black, 90%);
 $white: rgb(255,255,255);
 
-$bodycolor: $white;
-$textcolor: $black;
-
 // Typography
-
-$basefont: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$basefontsize: 16;
-$baselineheight: 1.5em;
-$baseheadingfont: inherit;
-$baseheadingfontweight: bold;
-$baseheadingfontcolor: inherit;
-
-$altfont: Cambria, Georgia, Times, "Times New Roman";
-$altlineheight: 1.35em;
-
-$codefont: Monaco, Courier New, monospace;
 
 $font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-serif: Georgia, "Times New Roman", Times, serif;
@@ -34,7 +19,11 @@ $primaryColor:#000;
 $secondaryColor:#fff;
 // $tertiaryColor: #;
 // $bordercolor: lighten($primaryColor, 60%);
-$basecolor: $primaryColor;
+
+$success: #5cb85c;
+$warning: #f0ad4e;
+$error: #d9534f;
+$info: #5bc0de;
 
 // Links
 
@@ -45,8 +34,3 @@ $linkcolorfocus  : darken($linkcolorvisited, 10);
 
 
 $breakpointL: '60em';
-
-$success: #5cb85c;
-$warning: #f0ad4e;
-$error: #d9534f;
-$info: #5bc0de;
