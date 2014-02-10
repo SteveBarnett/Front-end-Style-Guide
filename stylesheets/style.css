@@ -661,19 +661,19 @@ svg:not(:root) {
 
 /* line 63, ../sass/_base.scss */
 .primary-colour-swatch {
-  background: #000;
+  background: black;
   color: #fff;
 }
 
 /* line 68, ../sass/_base.scss */
 .secondary-colour-swatch {
-  background: #666;
+  background: #404040;
   color: #fff;
 }
 
 /* line 73, ../sass/_base.scss */
 .tertiary-colour-swatch {
-  background: #ccc;
+  background: gray;
 }
 
 /* line 9, ../sass/_layout.scss */

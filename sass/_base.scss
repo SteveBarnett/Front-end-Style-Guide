@@ -61,15 +61,15 @@ svg:not(:root) {
 // colours
 
 .primary-colour-swatch {
-  background: #000;
+  background: $black;
   color: #fff;
 }
 
 .secondary-colour-swatch {
-  background: #666;
+  background: $darkgrey;
   color: #fff;
 }
 
 .tertiary-colour-swatch {
-  background: #ccc;
+  background: $grey;
 }
