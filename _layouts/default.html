@@ -16,18 +16,18 @@
         <!--<script src="js/modernizr.custom.min.js"></script> -->
 
         <!-- Combine js files and grab here -->
-        <script type="text/javascript">
-        function downloadJSAtOnload() {
-        var element = document.createElement("script");
-        element.src = "js/main.min.js";
-        document.body.appendChild(element);
-        }
-        if (window.addEventListener)
-        window.addEventListener("load", downloadJSAtOnload, false);
-        else if (window.attachEvent)
-        window.attachEvent("onload", downloadJSAtOnload);
-        else window.onload = downloadJSAtOnload;
-        </script>
+        // <script type="text/javascript">
+        // function downloadJSAtOnload() {
+        // var element = document.createElement("script");
+        // element.src = "js/main.min.js";
+        // document.body.appendChild(element);
+        // }
+        // if (window.addEventListener)
+        // window.addEventListener("load", downloadJSAtOnload, false);
+        // else if (window.attachEvent)
+        // window.attachEvent("onload", downloadJSAtOnload);
+        // else window.onload = downloadJSAtOnload;
+        // </script>
     </head>
     <body>
 
@@ -47,6 +47,9 @@
         {% include paragraph.html %}
         {% include blockquote.html %}
         {% include code-and-pre.html %}
+        {% include rule.html %}
+        {% include definitions.html %}
+        {% include responsive-image.html %}
 
         <form action="">
           {% include input-email.html %} <br />
@@ -77,5 +80,9 @@
           ga('create','UA-XXXXX-X');ga('send','pageview');
       </script>
       -->
+
+        <script src="js/main.js"></script>
+        <script src="js/picturefill.js"></script>
+        <script src="js/matchmedia.js"></script>
     </body>
 </html>
