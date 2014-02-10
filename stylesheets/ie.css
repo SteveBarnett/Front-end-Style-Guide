@@ -662,14 +662,16 @@ svg:not(:root) {
 /* line 63, ../sass/_base.scss */
 .primary-colour-swatch {
   background: #000;
+  color: #fff;
 }
 
-/* line 67, ../sass/_base.scss */
+/* line 68, ../sass/_base.scss */
 .secondary-colour-swatch {
   background: #666;
+  color: #fff;
 }
 
-/* line 71, ../sass/_base.scss */
+/* line 73, ../sass/_base.scss */
 .tertiary-colour-swatch {
   background: #ccc;
 }
@@ -705,6 +707,7 @@ svg:not(:root) {
 .colour-swatch {
   width: 6em;
   height: 6em;
+  float: left;
 }
 
 /* line 6, ../sass/_typography.scss */
