@@ -28,73 +28,199 @@
         // window.attachEvent("onload", downloadJSAtOnload);
         // else window.onload = downloadJSAtOnload;
         </script>
+
+        <style>
+          .sg-pattern {
+            padding-bottom: 2em;
+          }
+        </style>
     </head>
     <body>
 
       {{ content }}
 
-      {% include skip-to-main.html %}
-      {% include banner.html %}
-      {% include menu-link.html %}
+      <div class="sg-pattern">
+        {% include skip-to-main.html %}
+      </div>
 
-      <main role="main" id="main" class="main" tabindex="-1">
+      <div class="sg-pattern">
+        {% include banner.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include menu-link.html %}
+      </div>
+
+      <div class="sg-pattern">
         {% include swatches.html %}
+      </div>
 
+      <div class="sg-pattern">
         {% include fonts.html %}
+      </div>
+
+      <div class="sg-pattern">
         {% include heading1.html %}
+      </div>
+
+      <div class="sg-pattern">
         {% include heading2.html %}
+      </div>
+
+      <div class="sg-pattern">
         {% include heading3.html %}
+      </div>
+
         {% include heading4.html %}
+      </div>
+
+      <div class="sg-pattern">
         {% include heading5.html %}
+      </div>
+
+      <div class="sg-pattern">
         {% include heading6.html %}
+      </div>
+
+      <div class="sg-pattern">
         {% include paragraph.html %}
+      </div>
+
+      <div class="sg-pattern">
         {% include blockquote.html %}
+      </div>
+
+      <div class="sg-pattern">
         {% include code-and-pre.html %}
+      </div>
+
+      <div class="sg-pattern">
         {% include rule.html %}
         {% include definitions.html %}
-        {% include responsive-image.html %}
-        {% include table.html %}
+      </div>
 
+      <div class="sg-pattern">
+        {% include responsive-image.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include table.html %}
+      </div>
+
+      <div class="sg-pattern">
         <form action="">
           <!-- Show form fields at different widths -->
           <!-- Show left labels, top labels -->
           <fieldset>
             <legend>Legend for a fieldset</legend>
-            {% include input-email.html %} <br />
-            {% include input-number.html %} <br />
-            {% include input-text.html %} <br />
-            {% include input-url.html %} <br />
-            {% include input-search.html %} <br />
-            {% include input-tel.html %} <br />
-            {% include input-password.html %} <br />
-            {% include input-range.html %} <br />
-            {% include input-date.html %} <br />
+            <p>Contents of a fieldset</p>
           </fieldset>
-          {% include select.html %} <br />
-          {% include textarea.html %} <br />
-          {% include checkbox.html %} <br />
-          {% include input-radio.html %} <br />
-          {% include button.html %} <br />
-          {% include submit.html %} <br />
         </form>
+      </div>
 
+      <div class="sg-pattern">
+        {% include input-email.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include input-number.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include input-text.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include input-url.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include input-search.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include input-tel.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include input-password.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include input-range.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include input-date.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include select.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include textarea.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include checkbox.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include input-radio.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include button.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include submit.html %}
+      </div>
+
+      <div class="sg-pattern">
         {% include list-ordered.html %}
+      </div>
+
+      <div class="sg-pattern">
         {% include list-unordered.html %}
+      </div>
 
+      <div class="sg-pattern">
         {% include meter-and-progress.html %}
+      </div>
 
+      <div class="sg-pattern">
         {% include details-summary.html %}
+      </div>
 
-      </main>
+      <div class="sg-pattern">
+        {% include grid.html %}
+      </div>
 
-      {% include grid.html %}
-      {% include slats.html %}
-      {% include feedback.html %}
-      {% include icons.html %}
-      {% include animations.html %}
-      {% include share.html %}
+      <div class="sg-pattern">
+        {% include slats.html %}
+      </div>
 
-      {% include footer.html %}
+      <div class="sg-pattern">
+        {% include feedback.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include icons.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include animations.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include share.html %}
+      </div>
+
+      <div class="sg-pattern">
+        {% include footer.html %}
+      </div>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <!--
