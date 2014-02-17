@@ -528,86 +528,77 @@ p + p {
 }
 
 /* line 15, ../sass/_typography.scss */
-p, table {
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-}
-
-/* line 23, ../sass/_typography.scss */
 p {
   font-variant-numeric: old style-nums proportional-nums;
 }
 
 @media only screen and (min-width: 38em) {
-  /* line 29, ../sass/_typography.scss */
+  /* line 21, ../sass/_typography.scss */
   p, table {
     hyphens: none;
   }
 }
-/* line 40, ../sass/_typography.scss */
+/* line 32, ../sass/_typography.scss */
 p {
   font-variant-numeric: old style-nums proportional-nums;
 }
 
-/* line 44, ../sass/_typography.scss */
+/* line 36, ../sass/_typography.scss */
 blockquote {
   margin: 1.5em;
 }
 
-/* line 57, ../sass/_typography.scss */
+/* line 49, ../sass/_typography.scss */
 .uc {
   text-transform: uppercase;
 }
 
-/* line 61, ../sass/_typography.scss */
+/* line 53, ../sass/_typography.scss */
 .capitalize {
   text-transform: capitalize;
 }
 
-/* line 65, ../sass/_typography.scss */
+/* line 57, ../sass/_typography.scss */
 .tac {
   text-align: center;
 }
 
-/* line 69, ../sass/_typography.scss */
+/* line 61, ../sass/_typography.scss */
 .tar {
   text-align: right;
 }
 
-/* line 73, ../sass/_typography.scss */
+/* line 65, ../sass/_typography.scss */
 .tal {
   text-align: left;
 }
 
-/* line 77, ../sass/_typography.scss */
+/* line 69, ../sass/_typography.scss */
 .no-bull {
   list-style: none;
 }
 
-/* line 81, ../sass/_typography.scss */
+/* line 73, ../sass/_typography.scss */
 .font--primary {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 85, ../sass/_typography.scss */
+/* line 77, ../sass/_typography.scss */
 .font--secondary {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* line 89, ../sass/_typography.scss */
+/* line 81, ../sass/_typography.scss */
 .font--sans {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 93, ../sass/_typography.scss */
+/* line 85, ../sass/_typography.scss */
 .font--serif {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* line 101, ../sass/_typography.scss */
+/* line 93, ../sass/_typography.scss */
 code,
 kbd,
 pre,
@@ -616,33 +607,83 @@ samp,
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
-/* line 109, ../sass/_typography.scss */
+/* line 103, ../sass/_typography.scss */
 .custom-list {
   list-style: none;
 }
 
-/* line 113, ../sass/_typography.scss */
+/* line 107, ../sass/_typography.scss */
 .custom-list--item:before {
   content: "\2192";
   position: absolute;
   left: 1em;
 }
 
-/* line 119, ../sass/_typography.scss */
+/* line 113, ../sass/_typography.scss */
 .custom-list--counter {
   counter-reset: step;
 }
 
-/* line 123, ../sass/_typography.scss */
+/* line 117, ../sass/_typography.scss */
 .custom-list--counter--item {
   counter-increment: step;
 }
 
-/* line 127, ../sass/_typography.scss */
+/* line 121, ../sass/_typography.scss */
 .custom-list--counter--item:before {
   content: counter(step);
   position: absolute;
   left: 1em;
+}
+
+/* line 129, ../sass/_typography.scss */
+body {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+/* line 147, ../sass/_typography.scss */
+abbr,
+acronym,
+blockquote,
+code,
+dir,
+kbd,
+listing,
+plaintext,
+q,
+samp,
+tt,
+var,
+xmp {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;
+}
+
+/* line 152, ../sass/_typography.scss */
+cite {
+  display: block;
+  text-align: right;
+  font-style: normal;
+}
+
+/* line 159, ../sass/_typography.scss */
+.pullquote:before {
+  content: "\201C";
+  top: 0;
+  left: 0;
+}
+/* line 164, ../sass/_typography.scss */
+.pullquote:after {
+  content: "\201D";
+  bottom: 0;
+  right: 0;
 }
 
 /* line 6, ../sass/_base.scss */
@@ -956,86 +997,77 @@ p + p {
 }
 
 /* line 15, ../sass/_typography.scss */
-p, table {
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-}
-
-/* line 23, ../sass/_typography.scss */
 p {
   font-variant-numeric: old style-nums proportional-nums;
 }
 
 @media only screen and (min-width: 38em) {
-  /* line 29, ../sass/_typography.scss */
+  /* line 21, ../sass/_typography.scss */
   p, table {
     hyphens: none;
   }
 }
-/* line 40, ../sass/_typography.scss */
+/* line 32, ../sass/_typography.scss */
 p {
   font-variant-numeric: old style-nums proportional-nums;
 }
 
-/* line 44, ../sass/_typography.scss */
+/* line 36, ../sass/_typography.scss */
 blockquote {
   margin: 1.5em;
 }
 
-/* line 57, ../sass/_typography.scss */
+/* line 49, ../sass/_typography.scss */
 .uc {
   text-transform: uppercase;
 }
 
-/* line 61, ../sass/_typography.scss */
+/* line 53, ../sass/_typography.scss */
 .capitalize {
   text-transform: capitalize;
 }
 
-/* line 65, ../sass/_typography.scss */
+/* line 57, ../sass/_typography.scss */
 .tac {
   text-align: center;
 }
 
-/* line 69, ../sass/_typography.scss */
+/* line 61, ../sass/_typography.scss */
 .tar {
   text-align: right;
 }
 
-/* line 73, ../sass/_typography.scss */
+/* line 65, ../sass/_typography.scss */
 .tal {
   text-align: left;
 }
 
-/* line 77, ../sass/_typography.scss */
+/* line 69, ../sass/_typography.scss */
 .no-bull {
   list-style: none;
 }
 
-/* line 81, ../sass/_typography.scss */
+/* line 73, ../sass/_typography.scss */
 .font--primary {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 85, ../sass/_typography.scss */
+/* line 77, ../sass/_typography.scss */
 .font--secondary {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* line 89, ../sass/_typography.scss */
+/* line 81, ../sass/_typography.scss */
 .font--sans {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 93, ../sass/_typography.scss */
+/* line 85, ../sass/_typography.scss */
 .font--serif {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* line 101, ../sass/_typography.scss */
+/* line 93, ../sass/_typography.scss */
 code,
 kbd,
 pre,
@@ -1044,33 +1076,83 @@ samp,
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
-/* line 109, ../sass/_typography.scss */
+/* line 103, ../sass/_typography.scss */
 .custom-list {
   list-style: none;
 }
 
-/* line 113, ../sass/_typography.scss */
+/* line 107, ../sass/_typography.scss */
 .custom-list--item:before {
   content: "\2192";
   position: absolute;
   left: 1em;
 }
 
-/* line 119, ../sass/_typography.scss */
+/* line 113, ../sass/_typography.scss */
 .custom-list--counter {
   counter-reset: step;
 }
 
-/* line 123, ../sass/_typography.scss */
+/* line 117, ../sass/_typography.scss */
 .custom-list--counter--item {
   counter-increment: step;
 }
 
-/* line 127, ../sass/_typography.scss */
+/* line 121, ../sass/_typography.scss */
 .custom-list--counter--item:before {
   content: counter(step);
   position: absolute;
   left: 1em;
+}
+
+/* line 129, ../sass/_typography.scss */
+body {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+/* line 147, ../sass/_typography.scss */
+abbr,
+acronym,
+blockquote,
+code,
+dir,
+kbd,
+listing,
+plaintext,
+q,
+samp,
+tt,
+var,
+xmp {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;
+}
+
+/* line 152, ../sass/_typography.scss */
+cite {
+  display: block;
+  text-align: right;
+  font-style: normal;
+}
+
+/* line 159, ../sass/_typography.scss */
+.pullquote:before {
+  content: "\201C";
+  top: 0;
+  left: 0;
+}
+/* line 164, ../sass/_typography.scss */
+.pullquote:after {
+  content: "\201D";
+  bottom: 0;
+  right: 0;
 }
 
 /**

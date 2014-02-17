@@ -12,14 +12,6 @@ p + p {
   margin-top: 0
 }
 
-p, table {
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-}
-
 p {
      font-variant-numeric: old style-nums proportional-nums;
 }
@@ -106,6 +98,8 @@ samp,
 
 }
 
+// custom lists
+
 .custom-list {
   list-style: none;
 }
@@ -128,4 +122,48 @@ samp,
   content: counter(step);
   position: absolute;
   left: 1em;
+}
+
+// Hyphenation
+
+body {
+  // Ala Trent Walton
+  // http://trentwalton.com/2011/09/07/css-hyphenation
+  @include css-hyphens(auto);
+}
+
+abbr,
+acronym,
+blockquote,
+code,
+dir,
+kbd,
+listing,
+plaintext,
+q,
+samp,
+tt,
+var,
+xmp {
+  // http://meyerweb.com/eric/thoughts/2012/12/17/where-to-avoid-css-hyphenation
+  @include css-hyphens(none);
+}
+
+cite {
+  display: block;
+  text-align: right;
+  font-style: normal;
+}
+
+.pullquote {
+  &:before {
+    content: "\201C";
+    top:  0;
+    left: 0;
+  }
+  &:after {
+    content: "\201D";
+    bottom: 0;
+    right: 0;
+  }
 }
