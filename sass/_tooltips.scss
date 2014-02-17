@@ -1,0 +1,201 @@
+/**
+ * source: hint-core.scss
+ *
+ * Defines the basic styling for the tooltip.
+ * Each tooltip is made of 2 parts:
+ *  1) body (:after)
+ *  2) arrow (:before)
+ *
+ * Classes added:
+ *  1) hint
+ */
+
+
+.hint, [data-hint] {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted;
+
+  &:before, &:after {
+    position: absolute;
+
+    // HACK: Trigger hardware accelerated rendering, otherwise transform was not
+    // working on a hidden element
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+
+    // HACK: visibility is set to hidden because IE & Opera don't support
+    // pointer-events on HTML content yet because of which hovering a hidden tooltip
+    // shows the tooltip.
+    visibility: hidden;
+    opacity: 0;
+    z-index: $zIndex;
+    // shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
+    pointer-events: none;
+
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+
+  &:hover, &:focus {
+    cursor: help;
+  }
+
+  &:hover:before, &:hover:after,
+  &:focus:before, &:focus:after {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /**
+   * tooltip arrow
+   */
+  &:before {
+    content: '';
+    position: absolute;
+    background: transparent;
+    border: $arrowBorderWidth solid transparent;
+    // move z-index 1 up than :after so that it shows over box-shadow
+    z-index: 1000001;
+  }
+
+  /**
+   * tooltip body
+   */
+  &:after {
+    content: attr(data-hint);
+    background: $defaultColor;
+    color: white;
+    text-shadow: 0 -1px 0px darken($defaultColor, $textShadowDarkenAmount);
+    padding: $verticalPadding $horizontalPadding;
+    font-size: 0.8em;
+    line-height: 1;
+    white-space: nowrap;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+
+/**
+ * source: hint-color-types.scss
+ *
+ * Contains tooltips of various types based on color differences.
+ *
+ * Classes added:
+ *  1) hint--error
+ *  2) hint--warning
+ *  3) hint--info
+ *  4) hint--success
+ *
+ */
+
+
+// mixin to generate different color style tooltips
+@mixin hint-type($color) {
+  &:after {
+    background-color: $color;
+    text-shadow: 0 -1px 0px darken($color, $textShadowDarkenAmount);
+  }
+
+  // generate arrow color style
+  @include arrow-border-color($color);
+}
+
+/**
+ * Error
+ */
+.#{$prefix}error {
+  @include hint-type($errorColor);
+}
+
+/**
+ * Warning
+ */
+.#{$prefix}warning {
+  @include hint-type($warningColor)
+}
+
+/**
+ * Info
+ */
+.#{$prefix}info {
+  @include hint-type($infoColor)
+}
+
+/**
+ * Success
+ */
+.#{$prefix}success {
+  @include hint-type($successColor)
+}
+
+
+/**
+ * source: hint-always.scss
+ *
+ * Defines a persisted tooltip which shows always.
+ *
+ * Classes added:
+ *  1) hint--always
+ *
+ */
+
+.#{$prefix}always {
+  &:after, &:before {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.#{$prefix}top {
+    @include set-margin('translateY', -1);
+  }
+
+  &.#{$prefix}bottom {
+    @include set-margin('translateY', 1);
+  }
+
+  &.#{$prefix}left {
+    @include set-margin('translateX', -1);
+  }
+
+  &.#{$prefix}right {
+    @include set-margin('translateX', 1);
+  }
+}
+
+/**
+ * source: hint-rounded.scss
+ *
+ * Defines rounded corner tooltips.
+ *
+ * Classes added:
+ *  1) hint--rounded
+ *
+ */
+
+.#{$prefix}rounded {
+  &:after {
+    border-radius: 4px;
+  }
+}
+
+
+/**
+ * source: hint-effects.scss
+ *
+ * Defines various transition effects for the tooltips.
+ *
+ * Classes added:
+ *  1) hint--bounce
+ *
+ */
+
+.#{$prefix}bounce {
+  &:before, &:after {
+    -webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s cubic-bezier(.71,1.7,.77,1.24);
+    -moz-transition: opacity 0.3s ease, visibility 0.3s ease, -moz-transform 0.3s cubic-bezier(.71,1.7,.77,1.24);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(.71,1.7,.77,1.24);
+  }
+}
