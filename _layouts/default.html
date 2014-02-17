@@ -37,75 +37,13 @@
     </head>
     <body>
 
+    {% for pattern in site.data.patterns %}
+      <div class="sg-pattern">
+        {% include {{pattern}} %}
+      </div>
+    {% endfor %}
+
       {{ content }}
-
-      <div class="sg-pattern">
-        {% include skip-to-main.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include banner.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include menu-link.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include swatches.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include fonts.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include heading1.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include heading2.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include heading3.html %}
-      </div>
-
-        {% include heading4.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include heading5.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include heading6.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include paragraph.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include blockquote.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include code-and-pre.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include rule.html %}
-        {% include definitions.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include responsive-image.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include table.html %}
-      </div>
 
       <div class="sg-pattern">
         <form action="">
@@ -118,109 +56,7 @@
         </form>
       </div>
 
-      <div class="sg-pattern">
-        {% include input-email.html %}
-      </div>
 
-      <div class="sg-pattern">
-        {% include input-number.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include input-text.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include input-url.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include input-search.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include input-tel.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include input-password.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include input-range.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include input-date.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include select.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include textarea.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include checkbox.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include input-radio.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include button.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include submit.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include list-ordered.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include list-unordered.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include meter-and-progress.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include details-summary.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include grid.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include slats.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include feedback.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include icons.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include animations.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include share.html %}
-      </div>
-
-      <div class="sg-pattern">
-        {% include footer.html %}
-      </div>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <!--
