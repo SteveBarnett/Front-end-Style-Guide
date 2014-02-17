@@ -608,35 +608,40 @@ samp,
 }
 
 /* line 103, ../sass/_typography.scss */
+.list-square {
+  list-style-type: square;
+}
+
+/* line 107, ../sass/_typography.scss */
 .custom-list {
   list-style: none;
 }
 
-/* line 107, ../sass/_typography.scss */
+/* line 111, ../sass/_typography.scss */
 .custom-list--item:before {
   content: "\2192";
   position: absolute;
   left: 1em;
 }
 
-/* line 113, ../sass/_typography.scss */
+/* line 117, ../sass/_typography.scss */
 .custom-list--counter {
   counter-reset: step;
 }
 
-/* line 117, ../sass/_typography.scss */
+/* line 121, ../sass/_typography.scss */
 .custom-list--counter--item {
   counter-increment: step;
 }
 
-/* line 121, ../sass/_typography.scss */
+/* line 125, ../sass/_typography.scss */
 .custom-list--counter--item:before {
   content: counter(step);
   position: absolute;
   left: 1em;
 }
 
-/* line 129, ../sass/_typography.scss */
+/* line 133, ../sass/_typography.scss */
 body {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -645,7 +650,7 @@ body {
   hyphens: auto;
 }
 
-/* line 147, ../sass/_typography.scss */
+/* line 151, ../sass/_typography.scss */
 abbr,
 acronym,
 blockquote,
@@ -666,20 +671,20 @@ xmp {
   hyphens: none;
 }
 
-/* line 152, ../sass/_typography.scss */
+/* line 156, ../sass/_typography.scss */
 cite {
   display: block;
   text-align: right;
   font-style: normal;
 }
 
-/* line 159, ../sass/_typography.scss */
+/* line 163, ../sass/_typography.scss */
 .pullquote:before {
   content: "\201C";
   top: 0;
   left: 0;
 }
-/* line 164, ../sass/_typography.scss */
+/* line 168, ../sass/_typography.scss */
 .pullquote:after {
   content: "\201D";
   bottom: 0;
@@ -1094,35 +1099,40 @@ samp,
 }
 
 /* line 103, ../sass/_typography.scss */
+.list-square {
+  list-style-type: square;
+}
+
+/* line 107, ../sass/_typography.scss */
 .custom-list {
   list-style: none;
 }
 
-/* line 107, ../sass/_typography.scss */
+/* line 111, ../sass/_typography.scss */
 .custom-list--item:before {
   content: "\2192";
   position: absolute;
   left: 1em;
 }
 
-/* line 113, ../sass/_typography.scss */
+/* line 117, ../sass/_typography.scss */
 .custom-list--counter {
   counter-reset: step;
 }
 
-/* line 117, ../sass/_typography.scss */
+/* line 121, ../sass/_typography.scss */
 .custom-list--counter--item {
   counter-increment: step;
 }
 
-/* line 121, ../sass/_typography.scss */
+/* line 125, ../sass/_typography.scss */
 .custom-list--counter--item:before {
   content: counter(step);
   position: absolute;
   left: 1em;
 }
 
-/* line 129, ../sass/_typography.scss */
+/* line 133, ../sass/_typography.scss */
 body {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -1131,7 +1141,7 @@ body {
   hyphens: auto;
 }
 
-/* line 147, ../sass/_typography.scss */
+/* line 151, ../sass/_typography.scss */
 abbr,
 acronym,
 blockquote,
@@ -1152,20 +1162,20 @@ xmp {
   hyphens: none;
 }
 
-/* line 152, ../sass/_typography.scss */
+/* line 156, ../sass/_typography.scss */
 cite {
   display: block;
   text-align: right;
   font-style: normal;
 }
 
-/* line 159, ../sass/_typography.scss */
+/* line 163, ../sass/_typography.scss */
 .pullquote:before {
   content: "\201C";
   top: 0;
   left: 0;
 }
-/* line 164, ../sass/_typography.scss */
+/* line 168, ../sass/_typography.scss */
 .pullquote:after {
   content: "\201D";
   bottom: 0;
