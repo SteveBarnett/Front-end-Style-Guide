@@ -31,16 +31,30 @@
 
         <style>
           .sg-pattern {
-            padding-bottom: 2em;
+            margin: 0 auto 2em auto;
+            width: 95%;
+            border: solid 1px #eee;
+            border-radius: 0.25em;
+          }
+          .sg-pattern-link {
+            display: block;
+            padding: 0.5em;
+            text-align: right;
+            background: #eee;
+            margin-bottom: 1em;
+          }
+          .sg-pattern-link:hover {
+            background: #ddd;
           }
         </style>
     </head>
     <body>
 
     {% for pattern in site.data.patterns %}
-      <div class="sg-pattern">
-        {% include {{pattern}} %}
-      </div>
+    <div class="sg-pattern" id="{{pattern | replace:' ', '-' | replace: '.html', '' }}">
+      <a href="#{{pattern | replace:' ', '-' | replace: '.html', '' }}" class="sg-pattern-link" title="Link to {{pattern | replace:' ', '-' | replace: '.html', '' }}">{{pattern}}</a>
+      {% include {{pattern}} %}
+    </div>
     {% endfor %}
 
       {{ content }}
