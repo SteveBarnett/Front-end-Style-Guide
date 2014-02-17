@@ -105,3 +105,13 @@ samp,
 .h--figure {
 
 }
+
+.custom-list {
+  list-style: none;
+}
+
+.custom-list--item:before {
+  content: "\2192";
+  position: absolute;
+  left: 1em;
+}

@@ -616,6 +616,18 @@ samp,
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
+/* line 109, ../sass/_typography.scss */
+.custom-list {
+  list-style: none;
+}
+
+/* line 113, ../sass/_typography.scss */
+.custom-list--item:before {
+  content: "\2192";
+  position: absolute;
+  left: 1em;
+}
+
 /* line 6, ../sass/_base.scss */
 a {
   color: #013568;
@@ -1013,6 +1025,18 @@ pre,
 samp,
 .font--code {
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+
+/* line 109, ../sass/_typography.scss */
+.custom-list {
+  list-style: none;
+}
+
+/* line 113, ../sass/_typography.scss */
+.custom-list--item:before {
+  content: "\2192";
+  position: absolute;
+  left: 1em;
 }
 
 /**
