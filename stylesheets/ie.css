@@ -744,7 +744,18 @@ hr {
   border-style: dashed;
 }
 
-/* line 58, ../sass/_base.scss */
+/* line 55, ../sass/_base.scss */
+.rule--other {
+  border: 0;
+}
+/* line 57, ../sass/_base.scss */
+.rule--other:after {
+  content: "";
+  border-bottom: solid 1px gray;
+  display: block;
+}
+
+/* line 66, ../sass/_base.scss */
 img {
   border-width: 0;
   vertical-align: middle;
@@ -753,44 +764,44 @@ img {
   height: auto;
 }
 
-/* line 66, ../sass/_base.scss */
+/* line 74, ../sass/_base.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 72, ../sass/_base.scss */
+/* line 80, ../sass/_base.scss */
 .colour-swatch--primary {
   background: black;
   color: #fff;
 }
 
-/* line 77, ../sass/_base.scss */
+/* line 85, ../sass/_base.scss */
 .colour-swatch--secondary {
   background: #404040;
   color: #fff;
 }
 
-/* line 82, ../sass/_base.scss */
+/* line 90, ../sass/_base.scss */
 .colour-swatch--tertiary {
   background: gray;
 }
 
-/* line 86, ../sass/_base.scss */
+/* line 94, ../sass/_base.scss */
 .colour-swatch--success {
   background: #5cb85c;
 }
 
-/* line 90, ../sass/_base.scss */
+/* line 98, ../sass/_base.scss */
 .colour-swatch--warning {
   background: #f0ad4e;
 }
 
-/* line 94, ../sass/_base.scss */
+/* line 102, ../sass/_base.scss */
 .colour-swatch--error {
   background: #d9534f;
 }
 
-/* line 98, ../sass/_base.scss */
+/* line 106, ../sass/_base.scss */
 .colour-swatch--info {
   background: #5bc0de;
 }
@@ -983,6 +994,12 @@ svg:not(:root) {
   -webkit-transform: translateX(-0.5em);
   -moz-transform: translateX(-0.5em);
   transform: translateX(-0.5em);
+}
+
+/* line 136, ../sass/_layout.scss */
+.w-half {
+  width: 50%;
+  margin: 0 auto;
 }
 
 /* line 6, ../sass/_typography.scss */

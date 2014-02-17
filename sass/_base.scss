@@ -52,6 +52,14 @@ hr {
   border-style: dashed;
 }
 
+.rule--other {
+  border: 0;
+  &:after {
+    content: "";
+    border-bottom: solid 1px $grey;
+    display: block;
+  }
+}
 
 // img
 

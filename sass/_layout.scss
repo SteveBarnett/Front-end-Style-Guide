@@ -132,3 +132,8 @@
 .#{$prefix}left {
   @include horizontal-positioned-tooltip('right', -1);
 }
+
+.w-half {
+  width: 50%;
+  margin: 0 auto;
+}
