@@ -628,6 +628,23 @@ samp,
   left: 1em;
 }
 
+/* line 119, ../sass/_typography.scss */
+.custom-list--counter {
+  counter-reset: step;
+}
+
+/* line 123, ../sass/_typography.scss */
+.custom-list--counter--item {
+  counter-increment: step;
+}
+
+/* line 127, ../sass/_typography.scss */
+.custom-list--counter--item:before {
+  content: counter(step);
+  position: absolute;
+  left: 1em;
+}
+
 /* line 6, ../sass/_base.scss */
 a {
   color: #013568;
@@ -1035,6 +1052,23 @@ samp,
 /* line 113, ../sass/_typography.scss */
 .custom-list--item:before {
   content: "\2192";
+  position: absolute;
+  left: 1em;
+}
+
+/* line 119, ../sass/_typography.scss */
+.custom-list--counter {
+  counter-reset: step;
+}
+
+/* line 123, ../sass/_typography.scss */
+.custom-list--counter--item {
+  counter-increment: step;
+}
+
+/* line 127, ../sass/_typography.scss */
+.custom-list--counter--item:before {
+  content: counter(step);
   position: absolute;
   left: 1em;
 }

@@ -115,3 +115,17 @@ samp,
   position: absolute;
   left: 1em;
 }
+
+.custom-list--counter {
+  counter-reset: step;
+}
+
+.custom-list--counter--item {
+  counter-increment: step;
+}
+
+.custom-list--counter--item:before {
+  content: counter(step);
+  position: absolute;
+  left: 1em;
+}
