@@ -725,6 +725,24 @@ svg:not(:root) {
   background: #5bc0de;
 }
 
+/* line 3, ../sass/_icons.scss */
+.i-circle {
+  border-radius: 1em;
+  padding: 0 0.4em;
+}
+
+/* line 8, ../sass/_icons.scss */
+.i-circle--alt {
+  background: black;
+  color: white;
+}
+
+/* line 13, ../sass/_icons.scss */
+.i-circle--bordered {
+  border-style: solid;
+  border-width: 2px;
+}
+
 /* line 9, ../sass/_layout.scss */
 .no-p {
   padding: 0;
@@ -757,6 +775,16 @@ svg:not(:root) {
   width: 6em;
   height: 6em;
   float: left;
+}
+
+/* line 37, ../sass/_layout.scss */
+.fll {
+  float: left;
+}
+
+/* line 41, ../sass/_layout.scss */
+.flr {
+  float: right;
 }
 
 /* line 6, ../sass/_typography.scss */

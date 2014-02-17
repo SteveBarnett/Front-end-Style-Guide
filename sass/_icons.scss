@@ -1,0 +1,16 @@
+@import "variables";
+
+.i-circle {
+  border-radius: 1em;
+  padding: 0 0.4em;
+}
+
+.i-circle--alt {
+  background: $black;
+  color: $white;
+}
+
+.i-circle--bordered {
+  border-style: solid;
+  border-width: 2px;
+}
