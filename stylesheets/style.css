@@ -1449,6 +1449,26 @@ cite {
   transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
 }
 
+/* line 1, ../sass/_borders.scss */
+.bt {
+  border-top: solid 1px;
+}
+
+/* line 5, ../sass/_borders.scss */
+.br {
+  border-right: solid 1px;
+}
+
+/* line 9, ../sass/_borders.scss */
+.bb {
+  border-bottom: solid 1px;
+}
+
+/* line 13, ../sass/_borders.scss */
+.bl {
+  border-left: solid 1px;
+}
+
 @-webkit-viewport {
   width: device-width;
 }
@@ -1469,14 +1489,14 @@ cite {
   width: device-width;
 }
 
-/* line 135, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 html {
   -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: #bfbfbf;
 }
 
 /* ==|== Links ==== */
-/* line 143, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 :not(a):focus {
   outline: none;
 }
@@ -1487,7 +1507,7 @@ html {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 160, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -1496,7 +1516,7 @@ html {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 169, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1512,7 +1532,7 @@ html {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 186, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1526,7 +1546,7 @@ html {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 199, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .invisible {
   visibility: hidden;
 }
@@ -1542,7 +1562,7 @@ html {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 216, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -1551,7 +1571,7 @@ html {
   /* 2 */
 }
 
-/* line 221, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 .clearfix:after {
   clear: both;
 }
@@ -1560,7 +1580,7 @@ html {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 230, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -1570,7 +1590,7 @@ html {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 240, ../sass/style.scss */
+  /* line 241, ../sass/style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1579,18 +1599,18 @@ html {
     text-shadow: none !important;
   }
 
-  /* line 248, ../sass/style.scss */
+  /* line 249, ../sass/style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 252, ../sass/style.scss */
+  /* line 253, ../sass/style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 256, ../sass/style.scss */
+  /* line 257, ../sass/style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -1598,37 +1618,37 @@ html {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 265, ../sass/style.scss */
+  /* line 266, ../sass/style.scss */
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 270, ../sass/style.scss */
+  /* line 271, ../sass/style.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 275, ../sass/style.scss */
+  /* line 276, ../sass/style.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 280, ../sass/style.scss */
+  /* line 281, ../sass/style.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 284, ../sass/style.scss */
+  /* line 285, ../sass/style.scss */
   img {
     max-width: 100% !important;
   }
 
-  /* line 290, ../sass/style.scss */
+  /* line 291, ../sass/style.scss */
   p,
   h2,
   h3 {
@@ -1636,7 +1656,7 @@ html {
     widows: 3;
   }
 
-  /* line 296, ../sass/style.scss */
+  /* line 297, ../sass/style.scss */
   h2,
   h3 {
     page-break-after: avoid;
