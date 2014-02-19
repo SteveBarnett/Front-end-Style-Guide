@@ -750,11 +750,11 @@ hr {
 }
 
 /* line 55, ../sass/_base.scss */
-.rule--other {
+.rule {
   border: 0;
 }
 /* line 57, ../sass/_base.scss */
-.rule--other:after {
+.rule:after {
   content: "";
   border-bottom: solid 1px gray;
   display: block;
