@@ -38,7 +38,6 @@ hr {
   display : block;
   margin : 1em 0;
   padding : 0;
-  height : 1px;
   border : 0;
   border-top : 1px solid $grey;
   border-bottom : 1px solid $white;
@@ -59,6 +58,20 @@ hr {
     border-bottom: solid 1px $grey;
     display: block;
   }
+}
+
+.rule--mid {
+  &:after {
+    position: relative;
+    top: -0.5em;
+  }
+}
+
+.rule--legend {
+  position: relative;
+  top: 0.7em;
+  background: $white;
+  padding: 0 0.5em;
 }
 
 // img
